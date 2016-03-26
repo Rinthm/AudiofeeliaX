@@ -1,0 +1,8 @@
+<h1 class="kit-title"><%= @audio_kit.title %></h1>
+
+<% @audio_kit.sounds.each do |sound| %>
+<div class="sound-container">
+	<h3 class="sound-title"><%= sound.title %></h3>
+	<div class="sound-file"><%= sound.audio_file %></div>	
+</div>
+<% end %>
