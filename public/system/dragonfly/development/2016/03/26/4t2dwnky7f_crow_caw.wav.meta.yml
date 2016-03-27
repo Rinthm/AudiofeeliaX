@@ -1,0 +1,4 @@
+---
+name: crow-caw.wav
+model_class: Sound
+model_attachment: audio_file

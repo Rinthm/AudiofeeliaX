@@ -1,10 +1,14 @@
 <h1 class="kit-title"><%= @audio_kit.title %></h1>
 
+<div class="sounds-container">
 <% @audio_kit.sounds.each do |sound| %>
-<div class="sound-container">
-	<h3 class="sound-title" ><%= sound.title %></h3>
-	<div class="audio-pad">
-		<audio class="sound" src="<%= sound.audio_file.url %>"></audio>
+	<div class="sound">
+		<h3 class="sound-title" ><%= sound.title %></h3>
+		<div class="audio-pad">
+			<audio id="s<%= sound.id %>" src="<%= sound.audio_file.url %>"></audio>
+		</div>
 	</div>
-</div>
 <% end %>
+</div>
+
+<%= link_to "Add your own sound!", new_sound_path %>

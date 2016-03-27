@@ -2,12 +2,15 @@
 
 <%= form_for @sound do |f| %>
 	<div class="new-sound-form">
-		<%= f.label :title %>
-		<%= f.text_field :title %>
-		<br>
-		<%= f.label :audio_file %>
-		<%= f.file_field :audio_file %>
-		<br>
-		<%= f.submit 'Add Sound' %>
+		<p>
+			<%= f.label :title %>
+			<%= f.text_field :title %>
+		</p>
+		<p>
+			<%= f.label :audio_file %>
+			<%= f.file_field :audio_file %>
+			<span>Wav files only!</span>
+		</p>
+			<%= f.submit 'Add Sound' %>
 	</div>
 <% end %>	

@@ -1,0 +1,4 @@
+---
+name: double-snare.wav
+model_class: Sound
+model_attachment: audio_file
