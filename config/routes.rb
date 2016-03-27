@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :users
 
+  resources :sounds, only: [:new, :create, :index]
+
   get 'audio_kits/:id' => 'audio_kits#show'
 
   root 'audio_kits#show'

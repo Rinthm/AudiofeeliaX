@@ -14,6 +14,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'underscore-rails'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -25,6 +27,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+# Raphaël.js
+source 'https://rails-assets.tenex.tech' do
+	gem 'rails-assets-raphael'
+end
+
+# Dragonfly
+gem 'dragonfly', '~> 1.0.12'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -45,3 +55,6 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'rack-cache', :require => 'rack/cache'
+end

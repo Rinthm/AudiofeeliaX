@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+
+.audio-pad {
+	width: 100px;
+}
+
+.sounds-container {
+	width: 650px;
+}
+
+.sound {
+	display: inline-block;
+	width: 300px;
+}
+
+svg {
+	width: 95px;
+}
+
+path {
+	border: solid red 1px;
+}
