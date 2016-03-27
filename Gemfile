@@ -26,6 +26,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Raphaël.js
+source 'https://rails-assets.tenex.tech' do
+	gem 'rails-assets-raphael'
+end
+
+# Dragonfly
+gem 'dragonfly', '~> 1.0.12'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -45,3 +53,6 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'rack-cache', :require => 'rack/cache'
+end

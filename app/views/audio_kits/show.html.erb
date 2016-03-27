@@ -2,7 +2,9 @@
 
 <% @audio_kit.sounds.each do |sound| %>
 <div class="sound-container">
-	<h3 class="sound-title"><%= sound.title %></h3>
-	<div class="sound-file"><%= sound.audio_file %></div>	
+	<h3 class="sound-title" ><%= sound.title %></h3>
+	<div class="audio-pad">
+		<audio class="sound" src="<%= sound.audio_file.url %>"></audio>
+	</div>
 </div>
 <% end %>
