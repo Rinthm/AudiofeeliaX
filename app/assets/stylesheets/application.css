@@ -81,6 +81,7 @@ body {
 
 .nav-links-all {
 	float: right;
+	color: white;
 }
 
 .nav-link {
@@ -98,7 +99,7 @@ body {
 
 /*--- AUDIO KITS ---*/
 
-.all-kits-title {
+.main-title {
 	text-align: center;
 	font-size: 60px;
 	margin-top: 90px;

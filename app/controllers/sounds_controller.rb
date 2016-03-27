@@ -10,13 +10,13 @@ class SoundsController < ApplicationController
 
 	def create
 		@sound = Sound.new(sound_params)
-		# temporary assignment
-		@sound.creator_id = 1
+		@sound.creator_id = current_user.id
 		@sound.audio_kit_id = 1
 		if @sound.save
 			flash[:success] = "Sound saved!"
-			redirect_to '/audio_kits/show'
+			redirect_to audio_kit
 		else
+			flash[:danger] = "Something went wrong while creating your sound."
 			render 'new'
 		end
 	end

@@ -50,7 +50,6 @@ $(document).ready(function(){
 
 	// Play sound by pressing numbers
 	$("body").on('keypress', function(event){
-		// event.preventDefault();
 		switch(event.which) {
 		case 49:
 			playSound(0);
