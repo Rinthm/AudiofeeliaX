@@ -3,9 +3,9 @@ Rails.application.routes.draw do
 
   resources :sounds, only: [:new, :create, :index]
 
-  get 'audio_kits/:id' => 'audio_kits#show'
+  resources :audio_kits
 
-  root 'audio_kits#show'
+  root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -14,6 +14,40 @@
  *= require_self
  */
 
+ @import url(https://fonts.googleapis.com/css?family=Flavors);
+
+.home {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+	background: url('rainbow-ring.gif') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+}
+
+#home-title {
+	margin: auto;
+	font-size: 75px;
+	font-family: 'Flavors';
+}
+
+#home-title a {
+	text-decoration: none;
+	color: red;
+	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .6;
+}
+
+#home-title a:hover {
+	opacity: 1;
+}
 
 .audio-pad {
 	width: 100px;
@@ -30,8 +64,4 @@
 
 svg {
 	width: 95px;
-}
-
-path {
-	border: solid red 1px;
 }
