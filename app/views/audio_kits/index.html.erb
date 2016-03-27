@@ -1,2 +1,11 @@
+<h1 class="header-main all-kits-title">Audio Kits</h1>
 
-<h1></h1>
+<div class="audio-kits-container">
+	<table class="kits-table">
+		<% @audio_kits.each do |kit| %>
+			<th class="audio-kit">
+				<%= link_to "#{kit.title}", kit %>
+			</th>
+		<% end %>
+	</table>
+</div>

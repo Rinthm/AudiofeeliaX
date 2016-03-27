@@ -9,6 +9,7 @@
 <body>
 
 	<nav id="nav-main">
+		<p class="home-title nav-title"><%= link_to "AUDIOFEELS", root_path %></p>
 		<div class="nav-links-all">
 			<% if logged_in? %>
 				<p class="nav-link">Hey, <%= current_user.username %>!</p>

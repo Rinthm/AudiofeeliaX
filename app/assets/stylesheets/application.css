@@ -16,6 +16,11 @@
 
  @import url(https://fonts.googleapis.com/css?family=Flavors);
 
+body {
+	margin-top: 60px;
+}
+
+/*--- HOME PAGE ---*/
 .home {
 	position: absolute;
   top: 0;
@@ -30,24 +35,78 @@
   display: flex;
 }
 
-#home-title {
+.home-title {
 	margin: auto;
 	font-size: 75px;
 	font-family: 'Flavors';
 }
 
-#home-title a {
+.home-title a {
 	text-decoration: none;
-	color: red;
 	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: .6;
 }
 
-#home-title a:hover {
+.home-title a:hover {
 	opacity: 1;
 }
+/*------------------*/
+
+/*--- NAV BAR ---*/
+
+#nav-main {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 45px;
+	background-color: black;
+}
+
+#nav-main a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-title {
+	display: inline-block;
+	font-size: 30px;
+	margin-top: 15px;
+	padding-left: 30px;
+	width: 600px;
+}
+
+.nav-links-all {
+	float: right;
+}
+
+.nav-link {
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.nav-link a:hover {
+	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*------------------*/
+
+/*--- AUDIO KITS ---*/
+
+.all-kits-title {
+	text-align: center;
+	font-size: 60px;
+	margin-top: 90px;
+}
+
+/*------------------*/
+
+/*--- SOUNDPADS ---*/
 
 .audio-pad {
 	width: 100px;
@@ -65,3 +124,19 @@
 svg {
 	width: 95px;
 }
+/*------------------*/
+
+/*--- MISCELLANEOUS ---*/
+
+.flash-msg {
+	font-size: 18px;
+	font-family: cursive;
+	text-align: center;
+}
+
+/*------------------*/
+
+
+
+
+
