@@ -1,4 +1,5 @@
 //= require raphael
+//= require underscore
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
@@ -12,6 +13,17 @@ function playSound(index){
 		sound.play();
 	}
 
+function getRandomColor() {
+	var randomColor = '#' + Math.random().toString(16).substring(2, 8);
+	return randomColor;
+}
+
+function changePadColor(index){
+	var kitPad = $(".sound").eq(index).find('path');
+	// kitPad.animate({transform: "r" + 360}, 90);
+	kitPad.attr({fill: getRandomColor()});
+}
+
 $(document).ready(function(){
 
 	// Raphaël animation
@@ -19,11 +31,12 @@ $(document).ready(function(){
 		var paper = Raphael(this, 200, 100);
 		var kitPad = paper.path("M10,10L10,90L90,90L90,10Z");
 
-		kitPad.attr({fill:"#FF173C"});
+		kitPad.attr({fill: getRandomColor()});
+		kitPad.animate({fill: "black"}, 1000, '<');
 
 		kitPad.node.onclick = function(){
 			kitPad.animate({transform: "r" + 360}, 90);
-			kitPad.attr({fill:"#0F0103"});
+			kitPad.attr({fill: getRandomColor()});
 		}
 	})
 
@@ -41,33 +54,43 @@ $(document).ready(function(){
 		switch(event.which) {
 		case 49:
 			playSound(0);
+			changePadColor(0);
 			break;
 		case 50:
 			playSound(1);
+			changePadColor(1);
 			break;
 		case 51:
 			playSound(2);
+			changePadColor(2);
 			break;
 		case 52:
 			playSound(3);
+			changePadColor(3);
 			break;
 		case 53:
 			playSound(4);
+			changePadColor(4);
 			break;
 		case 54:
 			playSound(5);
+			changePadColor(5);
 			break;
 		case 55:
 			playSound(6);
+			changePadColor(6);
 			break;
 		case 56:
 			playSound(7);
+			changePadColor(7);
 			break;
 		case 57:
 			playSound(8);
+			changePadColor(8);
 			break;
 		case 48:
 			playSound(9);
+			changePadColor(9);
 			break;
 		}
 	})

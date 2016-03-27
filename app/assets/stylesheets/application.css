@@ -31,3 +31,7 @@
 svg {
 	width: 95px;
 }
+
+path {
+	border: solid red 1px;
+}
