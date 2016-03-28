@@ -168,6 +168,10 @@ body {
   border: 15px groove #B17B37;
   box-shadow: 0px 0px 45px;
 }
+
+#white {
+	color: white;
+}
 /*------------------*/
 
 /*--- SOUNDPADS ---*/
