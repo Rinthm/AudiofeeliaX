@@ -17,7 +17,7 @@
 @import url(https://fonts.googleapis.com/css?family=Flavors);
 
 body {
-	margin-top: 60px;
+	margin-top: 90px;
 	background-color: #F8FFDE;
 }
 
@@ -106,6 +106,35 @@ body {
 
 /*--- AUDIO KITS ---*/
 
+.kits-table {
+	border: 3px groove #B17B37;
+	background-image: url('wood.jpg');
+	width: 300px;
+	margin: 45px;
+	box-shadow: 0px 0px 45px;
+}
+
+.kits-table a {
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
+}
+
+.audio-kit {
+	height: 60px;
+}
+
+.kits-table td {
+	text-align: center;
+	color: #361727;
+}
+
+.kits-table a:hover {
+	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .audiokit-page-wrap {
 	text-align: center;
 }
@@ -120,10 +149,11 @@ body {
 
 .main-title {
 	text-align: center;
-	font-size: 45px;
-	margin: 45px;
+	font-size: 60px;
+	margin: 75px;
 	color: black;
-	text-shadow: 0px 0px 45px white;
+	text-shadow: 0px 0px 45px black;
+	font-family: cursive;
 }
 
 .sounds-container {
@@ -138,7 +168,6 @@ body {
   border: 15px groove #B17B37;
   box-shadow: 0px 0px 45px;
 }
-
 /*------------------*/
 
 /*--- SOUNDPADS ---*/
@@ -154,12 +183,13 @@ body {
 }
 
 .sound-title {
-	color: #FF00DC;
+	color: #F9DDF6;
 	margin-bottom: 0;
 	display: inline;
 	background-image: url('wood.jpg');
 	padding: 3px;
 	border: 3px groove #B17B37;
+	text-shadow: 0px 0px 6px black;
 }
 
 .sound {
@@ -177,7 +207,7 @@ svg {
 /*--- MISCELLANEOUS ---*/
 
 .flash-msg {
-	font-size: 18px;
+	font-size: 15px;
 	font-family: cursive;
 	text-align: center;
 }
