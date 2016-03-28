@@ -14,24 +14,229 @@
  *= require_self
  */
 
+@import url(https://fonts.googleapis.com/css?family=Flavors);
 
-.audio-pad {
-	width: 100px;
+body {
+	margin-top: 90px;
+	background-color: #F8FFDE;
+}
+
+/*--- HOME PAGE ---*/
+.home {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+	background: url('rainbow-ring.gif') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+}
+
+.home-title {
+	margin: auto;
+	font-size: 75px;
+	font-family: 'Flavors';
+}
+
+.home-title a {
+	text-decoration: none;
+	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .6;
+}
+
+.home-title a:hover {
+	opacity: 1;
+}
+/*------------------*/
+
+/*--- NAV BAR ---*/
+
+#nav-main {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
+	height: 45px;
+	background-color: black;
+}
+
+#nav-main a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-title {
+	display: inline-block;
+	font-size: 30px;
+	margin-top: 15px;
+	padding-left: 30px;
+}
+
+.nav-links-all {
+	float: right;
+	color: white;
+}
+
+.nav-link {
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.nav-link a:hover {
+	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcome-user {
+	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*------------------*/
+
+/*--- AUDIO KITS ---*/
+
+.kits-table {
+	border: 3px groove #B17B37;
+	background-image: url('wood.jpg');
+	width: 300px;
+	margin: 45px;
+	box-shadow: 0px 0px 45px;
+}
+
+.kits-table a {
+	font-size: 30px;
+	text-decoration: none;
+	color: black;
+}
+
+.audio-kit {
+	height: 60px;
+}
+
+.kits-table td {
+	text-align: center;
+	color: #361727;
+}
+
+.kits-table a:hover {
+	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.audiokit-page-wrap {
+	text-align: center;
+}
+
+.audiokit-title {
+	display: inline-block;
+	width: 750px;
+	background: url('metal.jpg') no-repeat center center;
+	border: 15px groove #B17B37;
+  box-shadow: 0px 0px 45px;
+}
+
+.main-title {
+	text-align: center;
+	font-size: 60px;
+	margin: 75px;
+	color: black;
+	text-shadow: 0px 0px 45px black;
+	font-family: cursive;
 }
 
 .sounds-container {
-	width: 650px;
+	padding: 0;
+	display: inline-block;
+	width: 50%;
+	background: url('rainbow-ring.gif') no-repeat center center;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border: 15px groove #B17B37;
+  box-shadow: 0px 0px 45px;
+}
+/*------------------*/
+
+/*--- SOUNDPADS ---*/
+
+.audio-pad {
+	width: 100px;
+	margin: auto;
+}
+
+.sounds-container {
+	width: 630px;
+	margin-top: 0 auto;
+}
+
+.sound-title {
+	color: #F9DDF6;
+	margin-bottom: 0;
+	display: inline;
+	background-image: url('wood.jpg');
+	padding: 3px;
+	border: 3px groove #B17B37;
+	text-shadow: 0px 0px 6px black;
 }
 
 .sound {
 	display: inline-block;
 	width: 300px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.add-sound-link {
+	border: 3px groove #B17B37;
+	background-image: url('wood.jpg');
+	width: 300px;
+	margin: 30px auto;
+	box-shadow: 0px 0px 45px;
+	padding: 10px;
+}
+
+.add-sound-link a {
+	font-size: 30px;
+	color: black;
+	text-decoration: none;
+}
+
+.add-sound-link a:hover {
+	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 svg {
-	width: 95px;
+	width: 100px;
+}
+/*------------------*/
+
+/*--- MISCELLANEOUS ---*/
+
+.flash-msg {
+	font-size: 15px;
+	margin-bottom: 15px;
+	font-family: cursive;
+	text-align: center;
 }
 
-path {
-	border: solid red 1px;
-}
+/*------------------*/
+
+
+
+
+

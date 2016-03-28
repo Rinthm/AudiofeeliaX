@@ -1,0 +1,25 @@
+<h1 class="header-main main-title">Audio Kits</h1>
+
+<div class="audio-kits-container">
+	<% @audio_kits.each do |kit| %>
+	<table class="kits-table">
+		<th class="audio-kit">
+			<%= link_to "#{kit.title}", kit %>
+		</th>
+		<tr>
+			<td>
+				<p>
+					Description:
+					<br>
+					<%= kit.description %>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Created by: <%= kit.creator.username %>
+			</td>
+		</tr>
+	</table>
+	<% end %>
+</div>

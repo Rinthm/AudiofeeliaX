@@ -2,11 +2,31 @@
 <html>
 <head>
   <title>Audiofeels</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+	<nav id="nav-main">
+		<p class="home-title nav-title"><%= link_to "AudiofeeliaX", root_path %></p>
+		<div class="nav-links-all">
+			<% if logged_in? %>
+				<p class="nav-link welcome-user">Hey, <%= current_user.username %>!</p>
+				<p class="nav-link"><%= link_to "All Audio Kits", audio_kits_path %></p>
+				<p class="nav-link"><%= link_to "Create Audio Kit", new_audio_kit_path %></p>
+				<p class="nav-link"><%= link_to "Logout", logout_path %></p>
+			<% else %>
+			<p class="nav-link"><%= link_to "All Audio Kits", audio_kits_path %></p>
+				<p class="nav-link"><%= link_to "Login", login_path %></p>
+				<p class="nav-link"><%= link_to "Create Account", new_user_path %></p>
+			<% end %>
+		</div>
+	</nav>
+
+	<% flash.each do |key, value| %>
+    <div class="flash-msg"><%= value %></div>
+  <% end %>
 
 <%= yield %>
 

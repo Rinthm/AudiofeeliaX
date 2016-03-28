@@ -1,4 +1,4 @@
-<h1 class="new-sound-title">Add a New Sound!</h1>
+<h1 class="header-main new-sound-title">Add a New Sound!</h1>
 
 <%= form_for @sound do |f| %>
 	<div class="new-sound-form">
@@ -9,8 +9,10 @@
 		<p>
 			<%= f.label :audio_file %>
 			<%= f.file_field :audio_file %>
-			<span>Wav files only!</span>
+			<span>Wav files only! (for now...)</span>
 		</p>
+			<%= f.hidden_field :creator_id, value: current_user.id %>
+			<%= f.hidden_field :audio_kit_id, value: params[:audio_kit_id] %>
 			<%= f.submit 'Add Sound' %>
 	</div>
 <% end %>	

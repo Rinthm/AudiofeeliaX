@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
   resources :users
 
-  resources :sounds, only: [:new, :create, :index]
+  resources :sounds
 
-  get 'audio_kits/:id' => 'audio_kits#show'
+  resources :audio_kits
 
-  root 'audio_kits#show'
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy', as: :logout
+
+  root 'home#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
