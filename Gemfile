@@ -35,6 +35,8 @@ end
 # Dragonfly
 gem 'dragonfly', '~> 1.0.12'
 
+gem 'rename'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

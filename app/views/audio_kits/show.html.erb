@@ -16,7 +16,9 @@
 	</div>
 
 	<% if logged_in? && current_user.id == @audio_kit.creator_id %>
-		<%= link_to "Add your own sound!", new_sound_path %>
+		<p class="add-sound-link">
+			<%= link_to "Add a sound!", new_sound_path( audio_kit_id: @audio_kit.id )%>
+		</p>
 	<% end %>
 
 </div>

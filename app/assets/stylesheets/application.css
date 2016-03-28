@@ -199,8 +199,29 @@ body {
 	margin-bottom: 30px;
 }
 
+.add-sound-link {
+	border: 3px groove #B17B37;
+	background-image: url('wood.jpg');
+	width: 300px;
+	margin: 30px auto;
+	box-shadow: 0px 0px 45px;
+	padding: 10px;
+}
+
+.add-sound-link a {
+	font-size: 30px;
+	color: black;
+	text-decoration: none;
+}
+
+.add-sound-link a:hover {
+	background: -webkit-linear-gradient(330deg, #e05252 0%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 svg {
-	width: 95px;
+	width: 100px;
 }
 /*------------------*/
 
@@ -208,6 +229,7 @@ svg {
 
 .flash-msg {
 	font-size: 15px;
+	margin-bottom: 15px;
 	font-family: cursive;
 	text-align: center;
 }
