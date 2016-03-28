@@ -6,6 +6,11 @@
 			<th class="audio-kit">
 				<%= link_to "#{kit.title}", kit %>
 			</th>
+			<tr>
+				<td>
+					Created by: <%= kit.creator.username %>
+				</td>
+			</tr>
 		<% end %>
 	</table>
 </div>

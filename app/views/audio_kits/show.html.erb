@@ -1,16 +1,22 @@
-<h1 class="header-main kit-title"><%= @audio_kit.title %></h1>
-
-<div class="sounds-container">
-<% @audio_kit.sounds.each do |sound| %>
-	<div class="sound">
-		<h3 class="sound-title" ><%= sound.title %></h3>
-		<div class="audio-pad">
-			<audio id="s<%= sound.id %>" src="<%= sound.audio_file.url %>"></audio>
-		</div>
+<div class="audiokit-page-wrap">
+	
+	<div class="audiokit-title">
+		<h1 class="header-main main-title"><%= @audio_kit.title %></h1>
 	</div>
-<% end %>
-</div>
 
-<% if logged_in? && current_user.id == @audio_kit.creator_id %>
-	<%= link_to "Add your own sound!", new_sound_path %>
-<% end %>
+	<div class="sounds-container">
+	<% @audio_kit.sounds.each do |sound| %>
+		<div class="sound">
+			<h3 class="sound-title" ><%= sound.title %></h3>
+			<div class="audio-pad">
+				<audio id="s<%= sound.id %>" src="<%= sound.audio_file.url %>"></audio>
+			</div>
+		</div>
+	<% end %>
+	</div>
+
+	<% if logged_in? && current_user.id == @audio_kit.creator_id %>
+		<%= link_to "Add your own sound!", new_sound_path %>
+	<% end %>
+
+</div>

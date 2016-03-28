@@ -30,8 +30,8 @@ $(document).ready(function(){
 		var paper = Raphael(this, 200, 100);
 		var kitPad = paper.path("M10,10L10,90L90,90L90,10Z");
 
-		kitPad.attr({fill: getRandomColor()});
-		kitPad.animate({fill: "black"}, 1000, '<');
+		kitPad.attr({fill: "black"});
+		kitPad.animate({fill: getRandomColor()}, 1500, 'bounce');
 
 		kitPad.node.onclick = function(){
 			kitPad.animate({transform: "r" + 360}, 90);
