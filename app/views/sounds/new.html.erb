@@ -9,7 +9,7 @@
 		<p>
 			<%= f.label :audio_file %>
 			<%= f.file_field :audio_file %>
-			<span>Wav files only! (for now...)</span>
+			<span>*Wav files only! (for now...)</span>
 		</p>
 			<%= f.hidden_field :creator_id, value: current_user.id %>
 			<%= f.hidden_field :audio_kit_id, value: params[:audio_kit_id] %>
